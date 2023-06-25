@@ -14,6 +14,8 @@ public class ModItems {
             new SwordItem(ToolMaterials.DIAMOND, 4, -2.7F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item DIAMOND_LONGSWORD = registerItem("diamond_longsword",
             new SwordItem(ToolMaterials.DIAMOND, 3, -3.0F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+    public static final Item NETHERITE_LONGSWORD = registerItem("netherite_longsword",
+            new SwordItem(ToolMaterials.NETHERITE, 3, -3.0F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
 
 
 
