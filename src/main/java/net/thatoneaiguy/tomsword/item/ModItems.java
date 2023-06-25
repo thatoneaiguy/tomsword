@@ -8,8 +8,9 @@ import net.minecraft.util.registry.Registry;
 import net.thatoneaiguy.tomsword.Tomsword;
 
 public class ModItems {
-
     public static final Item ECHO = registerItem("echo",
+            new Item(new FabricItemSettings().group(ItemGroup.COMBAT)));
+    public static final Item DIAMOND_LONGSWORD = registerItem("diamond_longsword",
             new Item(new FabricItemSettings().group(ItemGroup.COMBAT)));
 
 
