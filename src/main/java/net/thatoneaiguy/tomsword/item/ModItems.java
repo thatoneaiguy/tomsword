@@ -11,9 +11,9 @@ import net.thatoneaiguy.tomsword.Tomsword;
 
 public class ModItems {
     public static final Item ECHO = registerItem("echo",
-            new SwordItem(ToolMaterials.WOOD, 7, -0.5F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+            new SwordItem(ToolMaterials.DIAMOND, 4, -2.7F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item DIAMOND_LONGSWORD = registerItem("diamond_longsword",
-            new SwordItem(ToolMaterials.DIAMOND, 7, -1.5F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+            new SwordItem(ToolMaterials.DIAMOND, 3, -3.0F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
 
 
 

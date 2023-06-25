@@ -3,7 +3,7 @@
   "pattern": [
     "#EA",
     "#DA",
-    "#V "
+    "#M "
   ],
   "key": {
     "#": {
@@ -18,9 +18,12 @@
     "D": {
       "item": "minecraft:diamond_block"
     },
-    "V": {
+    "M": {
       "item": "minecraft:diamond_sword"
     }
   },
-  "result": "tomsword:echo"
+  "result": {
+    "item": "tomsword:echo",
+    "count": 1
+  }
 }
