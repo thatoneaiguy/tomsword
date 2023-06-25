@@ -3,15 +3,17 @@ package net.thatoneaiguy.tomsword.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.thatoneaiguy.tomsword.Tomsword;
 
 public class ModItems {
     public static final Item ECHO = registerItem("echo",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+            new SwordItem(ToolMaterials.WOOD, 7, -0.5F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item DIAMOND_LONGSWORD = registerItem("diamond_longsword",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+            new SwordItem(ToolMaterials.DIAMOND, 7, -1.5F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
 
 
 
