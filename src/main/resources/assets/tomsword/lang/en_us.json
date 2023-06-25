@@ -1,4 +1,6 @@
 {
   "item.tomsword.echo": "Echo",
-  "item.tomsword.diamond_longsword": "Diamond Longsword"
+  "item.tomsword.diamond_longsword": "Diamond Longsword",
+
+  "itemGroup.tomsword.tomsword": "Tomsword"
 }

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#EA",
+    "#DA",
+    "#V "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:echo_shard"
+    },
+    "E": {
+      "item": "minecraft:end_crystal"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    },
+    "V": {
+      "item": "minecraft:diamond_sword"
+    }
+  },
+  "result": "tomsword:echo"
+}

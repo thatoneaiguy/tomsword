@@ -9,9 +9,9 @@ import net.thatoneaiguy.tomsword.Tomsword;
 
 public class ModItems {
     public static final Item ECHO = registerItem("echo",
-            new Item(new FabricItemSettings().group(ItemGroup.COMBAT)));
+            new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item DIAMOND_LONGSWORD = registerItem("diamond_longsword",
-            new Item(new FabricItemSettings().group(ItemGroup.COMBAT)));
+            new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
 
 
 
