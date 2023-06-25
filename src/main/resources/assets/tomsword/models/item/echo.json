@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "Layer0": "tomsword:item/echo"
+  }
+}
