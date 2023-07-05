@@ -2,8 +2,8 @@
 	"credit": "thatoneaiguy",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "tomsword:item/netherite_longsword",
-		"particle": "tomsword:item/netherite_longsword"
+		"0": "tomsword:item/diamond_longsword",
+		"particle": "tomsword:item/diamond_longsword"
 	},
 	"elements": [
 		{
