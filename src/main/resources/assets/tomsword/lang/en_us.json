@@ -1,7 +1,8 @@
 {
-  "item.tomsword.echo": "Echo",
+  "item.tomsword.echo": "§3Echo",
   "item.tomsword.diamond_longsword": "Diamond Longsword",
   "item.tomsword.netherite_longsword": "Netherite Longsword",
+  "item.tomsword.bloodweaver": "§4Bloodweaver",
 
   "block.tomsword.chocolate_egg": "Chocolate Egg",
 

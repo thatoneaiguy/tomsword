@@ -4,12 +4,16 @@
   "version": "${version}",
 
   "name": "Tomsword",
-  "description": "okai so bacically i added shit to stab people with",
+  "description": "who is tom and why he mod?",
   "authors": [
-    "thatoneaiguy"
+    "tom"
+  ],
+  "contributors": [
+    "ideologi",
+    "yurii"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://github.com/NotMarshy1/tomsword",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 

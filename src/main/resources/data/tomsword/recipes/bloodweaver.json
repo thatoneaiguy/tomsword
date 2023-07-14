@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "clownscythe:clown_scythe"
+  },
+  "result": {
+    "item": "tomsword:bloodweaver"
+  }
+}
