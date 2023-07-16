@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#n#",
+    "#N#",
+    "#n#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "n": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_sword"
+    }
+  },
+  "result": {
+    "item": "tomsword:prismshard",
+    "count": 1
+  }
+}

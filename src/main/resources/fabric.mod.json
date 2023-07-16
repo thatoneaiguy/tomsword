@@ -4,9 +4,10 @@
   "version": "${version}",
 
   "name": "Tomsword",
-  "description": "who is tom and why he mod?",
+  "description": "who is tom and why he mod? who is prism and why he hard?",
   "authors": [
-    "tom"
+    "tom",
+    "prism"
   ],
   "contributors": [
     "ideologi",

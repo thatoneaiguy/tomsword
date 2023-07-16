@@ -18,6 +18,8 @@ public class ModItems {
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.8F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item BLOODWEAVER = registerItem("bloodweaver",
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+    public static final Item PRISMSHARD = registerItem("prismshard",
+            new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
 
 
 
