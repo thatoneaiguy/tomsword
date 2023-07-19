@@ -33,11 +33,16 @@ public class Andromeda extends SwordItem {
     private int cooldownTicks = 0;
 
     public Andromeda() {
-        super(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.EPIC));
+        super(ToolMaterials.NETHERITE,
+                -3,
+                -2.4F,
+                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.EPIC));
     }
 
     @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+    public TypedActionResult<ItemStack> use(World world,
+                                            PlayerEntity user,
+                                            Hand hand) {
         if (cooldownTicks <= 0) {
             cooldownTicks = COOLDOWN_DURATION;
             Vec3d cameraPos = user.getCameraPosVec(1.0F);
@@ -46,7 +51,11 @@ public class Andromeda extends SwordItem {
             double raycastDistance = 20.0;
             Vec3d endPos = cameraPos.add(cameraDirection.multiply(raycastDistance));
 
-            BlockHitResult hitResult = user.world.raycast(new RaycastContext(cameraPos, endPos, RaycastContext.ShapeType.OUTLINE, RaycastContext.FluidHandling.NONE, user));
+            BlockHitResult hitResult = user.world.raycast(new RaycastContext(cameraPos,
+                    endPos,
+                    RaycastContext.ShapeType.OUTLINE,
+                    RaycastContext.FluidHandling.NONE,
+                    user));
             if (hitResult.getType() == BlockHitResult.Type.BLOCK) {
                 double blockX = hitResult.getBlockPos().getX();
                 double blockY = hitResult.getBlockPos().getY();
@@ -62,26 +71,43 @@ public class Andromeda extends SwordItem {
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+    public void inventoryTick(ItemStack stack,
+                              World world,
+                              Entity entity,
+                              int slot,
+                              boolean selected) {
         if (cooldownTicks > 0) {
             cooldownTicks--;
         }
-        super.inventoryTick(stack, world, entity, slot, selected);
+        super.inventoryTick(stack,
+                world,
+                entity,
+                slot,
+                selected);
     }
 
-    public static List<PlayerEntity> getPlayersWithinRange(Vec3d areaCenter, double range, double height, World world) {
+    public static List<PlayerEntity> getPlayersWithinRange(Vec3d areaCenter,
+                                                           double range,
+                                                           double height,
+                                                           World world) {
         List<PlayerEntity> playersWithinRange = new ArrayList<>();
 
         for (PlayerEntity player : world.getPlayers()) {
             Vec3d playerPos = player.getPos();
-            if (isWithinCylinder(playerPos, areaCenter, range, height)) {
+            if (isWithinCylinder(playerPos,
+                    areaCenter,
+                    range,
+                    height)) {
                 playersWithinRange.add(player);
             }
         }
 
         return playersWithinRange;
     }
-    private static boolean isWithinCylinder(Vec3d point, Vec3d center, double radius, double height) {
+    private static boolean isWithinCylinder(Vec3d point,
+                                            Vec3d center,
+                                            double radius,
+                                            double height) {
         double dx = point.x - center.x;
         double dz = point.z - center.z;
         double distanceSquared = dx * dx + dz * dz;

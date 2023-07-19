@@ -12,5 +12,7 @@
 
   "block.tomsword.chocolate_egg": "Chocolate Egg",
 
-  "itemGroup.tomsword.tomsword": "Tomsword"
+  "itemGroup.tomsword.tomsword": "Tomsword",
+
+  "enchantment.tomsword.weaving": "Weaving"
 }

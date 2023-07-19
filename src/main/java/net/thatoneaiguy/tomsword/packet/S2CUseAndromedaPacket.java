@@ -34,9 +34,9 @@ public class S2CUseAndromedaPacket {
 
                 System.out.println(name + "" + String.valueOf(client.player.getName()));
                 if (Objects.equals(name, String.valueOf(client.player.getName()))) return;
-                client.world.addParticle(ParticleTypes.REVERSE_PORTAL, client.player.getX(), client.player.getY() + 2.0, client.player.getZ(), 0.0, 0.0, 0.0);
+                client.world.addParticle(ParticleTypes.REVERSE_PORTAL, client.player.getX(), client.player.getY() + 2.0, client.player.getZ(), 0.5, 0.5, 0.5);
                 client.player.setPos(blockX, blockY, blockZ);
-                client.world.addParticle(ParticleTypes.REVERSE_PORTAL, client.player.getX(), client.player.getY() + 2.0, client.player.getZ(), 0.0, 0.0, 0.0);
+                client.world.addParticle(ParticleTypes.REVERSE_PORTAL, client.player.getX(), client.player.getY() + 2.0, client.player.getZ(), 0.5, 0.5, 0.5);
             });
         });
     }
