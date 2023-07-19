@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tomsword:quarter_diamond"
+    }
+  ],
+  "result": {
+    "item": "tomsword:diamond_half_of_a_quarter",
+    "count": 1
+  }
+}

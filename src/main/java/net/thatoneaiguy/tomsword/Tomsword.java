@@ -3,6 +3,8 @@ package net.thatoneaiguy.tomsword;
 import net.fabricmc.api.ModInitializer;
 import net.thatoneaiguy.tomsword.block.ModBlocks;
 import net.thatoneaiguy.tomsword.item.ModItems;
+import net.thatoneaiguy.tomsword.packet.C2SUseAndromeda;
+import net.thatoneaiguy.tomsword.packet.S2CUseAndromedaPacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,9 +14,8 @@ public class Tomsword implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-
+		C2SUseAndromeda.register();
 	}
 }

@@ -10,7 +10,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(TitleScreen.class)
 public class ExampleMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
-	private void init(CallbackInfo info) {
-		Tomsword.LOGGER.info("die in a fucking hole whore");
+	private void init(CallbackInfo info) {Tomsword.LOGGER.info("learn to write a fucking load message");
 	}
 }
