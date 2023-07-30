@@ -31,7 +31,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item STARWEAVER = registerItem("starweaver",
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
-    public static final Item SOULE_SCYTHE = registerItem("soul_scythe",
+    public static final Item SOULE_SCYTHE = registerItem("soule_scythe",
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.1F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
 
 
