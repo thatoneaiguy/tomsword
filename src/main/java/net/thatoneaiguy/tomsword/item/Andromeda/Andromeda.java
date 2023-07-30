@@ -34,7 +34,7 @@ public class Andromeda extends SwordItem {
 
     public Andromeda() {
         super(ToolMaterials.NETHERITE,
-                -3,
+                -5,
                 -2.4F,
                 new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.EPIC));
     }

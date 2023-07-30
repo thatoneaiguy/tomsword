@@ -7,8 +7,8 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.Vec3d;
 
-public class WeavingEnchantment extends Enchantment {
-    public WeavingEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
+public class SoulePunisher extends Enchantment {
+    public SoulePunisher(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
         super(weight, type, slotTypes);
 
     }

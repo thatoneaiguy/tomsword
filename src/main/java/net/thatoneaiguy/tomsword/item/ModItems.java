@@ -2,10 +2,7 @@ package net.thatoneaiguy.tomsword.item;
 
 import dev.emi.trinkets.api.TrinketItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
@@ -32,10 +29,16 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item DIAMOND_HALF_OF_A_QUARTER = registerItem("diamond_half_of_a_quarter",
             new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+    public static final Item STARWEAVER = registerItem("starweaver",
+            new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+    public static final Item SOULE_SCYTHE = registerItem("soul_scythe",
+            new SwordItem(ToolMaterials.NETHERITE, 3, -2.1F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
 
 
-    private static Item registerItem(String name, Item item) {
+    public static final Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Tomsword.MOD_ID, name), item);
+
+
     }
 
     public static void registerModItems() {
