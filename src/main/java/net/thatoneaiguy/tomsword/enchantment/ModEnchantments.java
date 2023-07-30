@@ -8,9 +8,9 @@ import net.minecraft.util.registry.Registry;
 import net.thatoneaiguy.tomsword.Tomsword;
 
 public class ModEnchantments {
-    public static Enchantment WEAVING = register("weaving",
-            new WeavingEnchantment(Enchantment.Rarity.UNCOMMON,
-                    EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+//    public static Enchantment WEAVING = register("weaving",
+//           new WeavingEnchantment(Enchantment.Rarity.UNCOMMON,
+//                    EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
     public static Enchantment SOULE_PUNISHER = register("soule_punisher",
             new WeavingEnchantment(Enchantment.Rarity.UNCOMMON,
                     EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
