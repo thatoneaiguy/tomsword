@@ -16,8 +16,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(ItemRenderer.class)
-public class ItemRendererMixin {
+public class ItemRendererMixin 
     private static final ModelIdentifier DIA_INVENTORY_MODEL = new ModelIdentifier("tomsword:smoldia#inventory");
+    private static final ModelIdentifier BLOOD_INVENTORY_MODEL = new ModelIdentifier("tomsword:smallbloodweaver#inventory");
     @Shadow
     private @Final ItemModels models;
 
@@ -27,6 +28,11 @@ public class ItemRendererMixin {
         if (bl) {
             if (stack.isOf(ModItems.DIAMOND_LONGSWORD)) {
                 return models.getModelManager().getModel(DIA_INVENTORY_MODEL);
+            }
+        },
+        if (bl) {
+            if (stack.isOf(ModItems.BLOODWEAVER)) {
+                return models.getModelManager().getModel(BLOOD_INVENTORY_MODEL);
             }
         }
 
