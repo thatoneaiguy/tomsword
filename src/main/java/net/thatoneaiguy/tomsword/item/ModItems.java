@@ -18,21 +18,14 @@ public class ModItems {
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.8F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item BLOODWEAVER = registerItem("bloodweaver",
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
-    public static final Item PRISMSHARD = registerItem("prismshard",
+    public static final Item SHATTERBLADE = registerItem("shatterblade",
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE)));
     public static final Item ANDROMEDA_CORE = registerItem("andromeda_core",
             new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.EPIC)));
     public static final Item ANDROMEDA = registerItem("andromeda", new Andromeda());
-    public static final Item HALF_DIAMOND = registerItem("half_diamond",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
-    public static final Item QUARTER_DIAMOND = registerItem("quarter_diamond",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
-    public static final Item DIAMOND_HALF_OF_A_QUARTER = registerItem("diamond_half_of_a_quarter",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item STARWEAVER = registerItem("starweaver",
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
-    public static final Item SOULE_SCYTHE = registerItem("soule_scythe",
-            new SwordItem(ToolMaterials.NETHERITE, 3, -2.1F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+
 
 
     public static final Item registerItem(String name, Item item) {
