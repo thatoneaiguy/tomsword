@@ -14,20 +14,21 @@ public class WeavingEnchantment extends Enchantment {
     }
 
     private Vec3d applyKnockback(LivingEntity targetPlayer, LivingEntity attacker) {
-        // Calculate the knockback vector based on the attacker's position and the target player's position
-        double knockbackX = attacker.getX() - targetPlayer.getX();
-        double knockbackY = attacker.getY() - targetPlayer.getY();
-        double knockbackZ = attacker.getZ() - targetPlayer.getZ();
+        double knockbackX = (targetPlayer.getX() - attacker.getX());
+        double knockbackY = (targetPlayer.getY() - attacker.getY());
+        double knockbackZ = (targetPlayer.getZ() - attacker.getZ());
 
-        // Apply the knockback to the target player's motion
-        Vec3d vec3d = new Vec3d(knockbackX, knockbackY+0.5, knockbackZ);
-        return vec3d.normalize();
+        return new Vec3d(-knockbackX, knockbackY, -knockbackZ).normalize();
     }
+
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         assert target instanceof LivingEntity;
-        target.setVelocity(applyKnockback((LivingEntity) target, user).multiply(0.57));
-
+        if (!user.isOnGround()) {
+            target.setVelocity(applyKnockback((LivingEntity) target, user).multiply(0.6));
+            target.addVelocity(0, 0.5, 0);
+        }
+        //super.onTargetDamaged(user, target, level);
     }
 
     @Override

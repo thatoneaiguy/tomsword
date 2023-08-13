@@ -370,11 +370,13 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [40, 0, 0],
-			"translation": [-1.25, 14.4, 7.8]
+			"translation": [-2, 11.9, 7.8],
+			"scale": [0.75, 0.75, 0.75]
 		},
 		"firstperson_lefthand": {
 			"rotation": [40, 0, 0],
-			"translation": [-7.25, 14.4, 7.8]
+			"translation": [-6.5, 11.9, 7.8],
+			"scale": [0.75, 0.75, 0.75]
 		}
 	},
 	"groups": [

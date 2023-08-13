@@ -20,6 +20,8 @@ public class ItemRendererMixin {
     private static final ModelIdentifier DIA_INVENTORY_MODEL = new ModelIdentifier("tomsword:smoldia#inventory");
     private static final ModelIdentifier NETH_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolneth#inventory");
     private static final ModelIdentifier BLOOD_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolblood#inventory");
+    private static final ModelIdentifier SHAT_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolshatterblade#inventory");
+    private static final ModelIdentifier ECHO_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolecho#inventory");
 
     @Shadow
     private @Final ItemModels models;
@@ -40,6 +42,16 @@ public class ItemRendererMixin {
         if (bl) {
             if (stack.isOf(ModItems.BLOODWEAVER)) {
                 return models.getModelManager().getModel(BLOOD_INVENTORY_MODEL);
+            }
+        }
+        if (bl) {
+            if (stack.isOf(ModItems.SHATTERBLADE)) {
+                return models.getModelManager().getModel(SHAT_INVENTORY_MODEL);
+            }
+        }
+        if (bl) {
+            if (stack.isOf(ModItems.ECHO)) {
+                return models.getModelManager().getModel(ECHO_INVENTORY_MODEL);
             }
         }
 

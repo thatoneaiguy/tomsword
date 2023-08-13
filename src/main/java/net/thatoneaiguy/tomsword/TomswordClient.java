@@ -12,6 +12,8 @@ public class TomswordClient implements ClientModInitializer {
         ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "smoldia", "inventory")));
         ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "smolneth", "inventory")));
         ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "smolblood", "inventory")));
+        ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "smolshatterblade", "inventory")));
+        ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "smolecho", "inventory")));
         S2CUseAndromedaPacket.register();
         C2SUseAndromeda.register();
     }
