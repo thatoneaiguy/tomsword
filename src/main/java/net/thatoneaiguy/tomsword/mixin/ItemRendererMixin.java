@@ -50,7 +50,7 @@ public class ItemRendererMixin {
             }
         }
         if (bl) {
-            if (stack.isOf(ModItems.ECHO)) {
+            if (stack.isOf(ModItems.CATALYST)) {
                 return models.getModelManager().getModel(ECHO_INVENTORY_MODEL);
             }
         }
