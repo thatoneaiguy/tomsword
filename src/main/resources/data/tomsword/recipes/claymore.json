@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "N"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cookie"
+    },
+    "N": {
+      "item": "minecraft:netherite_sword"
+    }
+  },
+  "result": {
+    "item": "tomsword:cookie_claymore",
+    "count": 1
+  }
+}

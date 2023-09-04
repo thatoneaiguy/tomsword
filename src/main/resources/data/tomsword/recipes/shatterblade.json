@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "lll",
+    "lNl",
+    "lnl"
+  ],
+  "key": {
+    "l": {
+      "item": "minecraft:leather"
+    },
+    "n": {
+      "item": "minecraft:netherite_sword"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "tomsword:shatterblade",
+    "count": 1
+  }
+}

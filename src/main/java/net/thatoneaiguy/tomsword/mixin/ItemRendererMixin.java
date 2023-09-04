@@ -21,7 +21,8 @@ public class ItemRendererMixin {
     private static final ModelIdentifier NETH_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolneth#inventory");
     private static final ModelIdentifier BLOOD_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolblood#inventory");
     private static final ModelIdentifier SHAT_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolshatterblade#inventory");
-    private static final ModelIdentifier ECHO_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolecho#inventory");
+    private static final ModelIdentifier CATA_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolcatalyst#inventory");
+    private static final ModelIdentifier COOK_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolclaymore#inventory");
 
     @Shadow
     private @Final ItemModels models;
@@ -51,7 +52,12 @@ public class ItemRendererMixin {
         }
         if (bl) {
             if (stack.isOf(ModItems.CATALYST)) {
-                return models.getModelManager().getModel(ECHO_INVENTORY_MODEL);
+                return models.getModelManager().getModel(CATA_INVENTORY_MODEL);
+            }
+        }
+        if (bl) {
+            if (stack.isOf(ModItems.COOKIE_CLAYMORE)) {
+                return models.getModelManager().getModel(COOK_INVENTORY_MODEL);
             }
         }
 

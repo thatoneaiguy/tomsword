@@ -1,0 +1,8 @@
+{
+  "bloodweaver_effect": {
+    "subtitle": "subtitles.tomsword.bloodweaver_effect",
+    "sounds": [
+      "tomsword:blood_scythe_hit"
+    ]
+  }
+}

@@ -1,17 +1,12 @@
 package net.thatoneaiguy.tomsword.item.Andromeda;
 
-import dev.emi.trinkets.api.TrinketsApi;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.network.PacketByteBuf;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
@@ -22,11 +17,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
-import net.thatoneaiguy.tomsword.Tomsword;
 import net.thatoneaiguy.tomsword.item.ModItemGroup;
 import net.thatoneaiguy.tomsword.packet.C2SUseAndromeda;
-import net.thatoneaiguy.tomsword.packet.S2CUseAndromedaPacket;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +28,7 @@ public class Andromeda extends SwordItem {
 
     public Andromeda() {
         super(ToolMaterials.NETHERITE, 3, -2.4F,
-                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.EPIC));
+                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE));
     }
 
     @Override
@@ -50,8 +42,8 @@ public class Andromeda extends SwordItem {
         BlockHitResult hitResult = user.world.raycast(new RaycastContext(cameraPos, endPos, RaycastContext.ShapeType.OUTLINE, RaycastContext.FluidHandling.NONE, user));
         if (hitResult.getType() == BlockHitResult.Type.BLOCK) {
             user.getItemCooldownManager().set(this, 150);
-            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_ILLUSIONER_CAST_SPELL, SoundCategory.NEUTRAL, 0.5F, 1);
-            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.NEUTRAL, 0.5F, 1);
+            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_ILLUSIONER_CAST_SPELL, SoundCategory.PLAYERS, 0.5F, 1);
+            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 0.5F, 1);
             double blockX = hitResult.getBlockPos().getX();
             double blockY = hitResult.getBlockPos().getY();
             double blockZ = hitResult.getBlockPos().getZ();
@@ -59,10 +51,10 @@ public class Andromeda extends SwordItem {
             buffer.writeBlockPos(new BlockPos(new Vec3d(blockX, blockY, blockZ)));
             buffer.writeString(String.valueOf(user.getName()));
             ClientPlayNetworking.send(C2SUseAndromeda.C2SUSE_ANDROMEDA, buffer);
-
-            }
-        return TypedActionResult.success(user.getStackInHand(hand));
+            return TypedActionResult.success(user.getStackInHand(hand));
         }
+        return TypedActionResult.fail(user.getStackInHand(hand));
+    }
 
 
     @Override

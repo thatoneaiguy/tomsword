@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#EA",
-    "#DA",
-    "#M "
+    "DED",
+    "D#D",
+    "#M#"
   ],
   "key": {
     "#": {
@@ -12,18 +12,15 @@
     "E": {
       "item": "minecraft:end_crystal"
     },
-    "A": {
-      "item": "minecraft:amethyst_shard"
-    },
     "D": {
-      "item": "minecraft:diamond_block"
+      "item": "minecraft:diamond"
     },
     "M": {
-      "item": "minecraft:diamond_sword"
+      "item": "minecraft:netherite_sword"
     }
   },
   "result": {
-    "item": "tomsword:echo",
+    "item": "tomsword:catalyst",
     "count": 1
   }
 }

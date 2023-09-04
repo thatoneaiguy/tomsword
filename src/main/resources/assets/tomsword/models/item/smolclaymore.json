@@ -1,54 +1,66 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"textures": {
-		"0": "tomsword:item/smolnethsword",
-		"particle": "tomsword:item/smolnethsword"
+		"0": "tomsword:item/smolclaymore",
+		"particle": "tomsword:item/smolclaymore"
 	},
 	"elements": [
 		{
-			"name": "smolnethsword_0",
-			"from": [13, 13, 7],
-			"to": [16, 16, 8],
+			"name": "smolclaymore_0",
+			"from": [14, 14, 7.5],
+			"to": [16, 16, 8.5],
 			"faces": {
-				"north": {"uv": [16, 0, 13, 3], "texture": "#0"},
-				"east": {"uv": [15, 0, 16, 3], "texture": "#0"},
-				"south": {"uv": [13, 0, 16, 3], "texture": "#0"},
-				"west": {"uv": [13, 0, 14, 3], "texture": "#0"},
-				"up": {"uv": [13, 0, 16, 1], "texture": "#0"},
-				"down": {"uv": [13, 2, 16, 3], "texture": "#0"}
+				"north": {"uv": [16, 0, 14, 2], "texture": "#0"},
+				"east": {"uv": [15, 0, 16, 2], "texture": "#0"},
+				"south": {"uv": [14, 0, 16, 2], "texture": "#0"},
+				"west": {"uv": [14, 0, 15, 2], "texture": "#0"},
+				"up": {"uv": [14, 0, 16, 1], "texture": "#0"},
+				"down": {"uv": [14, 1, 16, 2], "texture": "#0"}
 			}
 		},
 		{
-			"name": "smolnethsword_1",
-			"from": [12, 10, 7],
-			"to": [13, 15, 8],
+			"name": "smolclaymore_1",
+			"from": [12, 11, 7.5],
+			"to": [14, 15, 8.5],
 			"faces": {
-				"north": {"uv": [13, 1, 12, 6], "texture": "#0"},
-				"east": {"uv": [12, 1, 13, 6], "texture": "#0"},
-				"south": {"uv": [12, 1, 13, 6], "texture": "#0"},
-				"west": {"uv": [12, 1, 13, 6], "texture": "#0"},
-				"up": {"uv": [12, 1, 13, 2], "texture": "#0"},
-				"down": {"uv": [12, 5, 13, 6], "texture": "#0"}
+				"north": {"uv": [14, 1, 12, 5], "texture": "#0"},
+				"east": {"uv": [13, 1, 14, 5], "texture": "#0"},
+				"south": {"uv": [12, 1, 14, 5], "texture": "#0"},
+				"west": {"uv": [12, 1, 13, 5], "texture": "#0"},
+				"up": {"uv": [12, 1, 14, 2], "texture": "#0"},
+				"down": {"uv": [12, 4, 14, 5], "texture": "#0"}
 			}
 		},
 		{
-			"name": "smolnethsword_2",
-			"from": [11, 9, 7],
-			"to": [12, 14, 8],
+			"name": "smolclaymore_2",
+			"from": [11, 10, 7.5],
+			"to": [12, 14, 8.5],
 			"faces": {
-				"north": {"uv": [12, 2, 11, 7], "texture": "#0"},
-				"east": {"uv": [11, 2, 12, 7], "texture": "#0"},
-				"south": {"uv": [11, 2, 12, 7], "texture": "#0"},
-				"west": {"uv": [11, 2, 12, 7], "texture": "#0"},
+				"north": {"uv": [12, 2, 11, 6], "texture": "#0"},
+				"east": {"uv": [11, 2, 12, 6], "texture": "#0"},
+				"south": {"uv": [11, 2, 12, 6], "texture": "#0"},
+				"west": {"uv": [11, 2, 12, 6], "texture": "#0"},
 				"up": {"uv": [11, 2, 12, 3], "texture": "#0"},
-				"down": {"uv": [11, 6, 12, 7], "texture": "#0"}
+				"down": {"uv": [11, 5, 12, 6], "texture": "#0"}
 			}
 		},
 		{
-			"name": "smolnethsword_3",
-			"from": [10, 8, 7],
-			"to": [11, 13, 8],
+			"name": "smolclaymore_3",
+			"from": [14, 12, 7.5],
+			"to": [15, 14, 8.5],
+			"faces": {
+				"north": {"uv": [15, 2, 14, 4], "texture": "#0"},
+				"east": {"uv": [14, 2, 15, 4], "texture": "#0"},
+				"south": {"uv": [14, 2, 15, 4], "texture": "#0"},
+				"west": {"uv": [14, 2, 15, 4], "texture": "#0"},
+				"up": {"uv": [14, 2, 15, 3], "texture": "#0"},
+				"down": {"uv": [14, 3, 15, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "smolclaymore_4",
+			"from": [10, 8, 7.5],
+			"to": [11, 13, 8.5],
 			"faces": {
 				"north": {"uv": [11, 3, 10, 8], "texture": "#0"},
 				"east": {"uv": [10, 3, 11, 8], "texture": "#0"},
@@ -59,22 +71,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_4",
-			"from": [13, 12, 7],
-			"to": [15, 13, 8],
-			"faces": {
-				"north": {"uv": [15, 3, 13, 4], "texture": "#0"},
-				"east": {"uv": [14, 3, 15, 4], "texture": "#0"},
-				"south": {"uv": [13, 3, 15, 4], "texture": "#0"},
-				"west": {"uv": [13, 3, 14, 4], "texture": "#0"},
-				"up": {"uv": [13, 3, 15, 4], "texture": "#0"},
-				"down": {"uv": [13, 3, 15, 4], "texture": "#0"}
-			}
-		},
-		{
-			"name": "smolnethsword_5",
-			"from": [9, 7, 7],
-			"to": [10, 12, 8],
+			"name": "smolclaymore_5",
+			"from": [9, 7, 7.5],
+			"to": [10, 12, 8.5],
 			"faces": {
 				"north": {"uv": [10, 4, 9, 9], "texture": "#0"},
 				"east": {"uv": [9, 4, 10, 9], "texture": "#0"},
@@ -85,22 +84,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_6",
-			"from": [13, 11, 7],
-			"to": [14, 12, 8],
-			"faces": {
-				"north": {"uv": [14, 4, 13, 5], "texture": "#0"},
-				"east": {"uv": [13, 4, 14, 5], "texture": "#0"},
-				"south": {"uv": [13, 4, 14, 5], "texture": "#0"},
-				"west": {"uv": [13, 4, 14, 5], "texture": "#0"},
-				"up": {"uv": [13, 4, 14, 5], "texture": "#0"},
-				"down": {"uv": [13, 4, 14, 5], "texture": "#0"}
-			}
-		},
-		{
-			"name": "smolnethsword_7",
-			"from": [4, 9, 7],
-			"to": [6, 11, 8],
+			"name": "smolclaymore_6",
+			"from": [4, 9, 7.5],
+			"to": [6, 11, 8.5],
 			"faces": {
 				"north": {"uv": [6, 5, 4, 7], "texture": "#0"},
 				"east": {"uv": [5, 5, 6, 7], "texture": "#0"},
@@ -111,9 +97,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_8",
-			"from": [8, 6, 7],
-			"to": [9, 11, 8],
+			"name": "smolclaymore_7",
+			"from": [8, 6, 7.5],
+			"to": [9, 11, 8.5],
 			"faces": {
 				"north": {"uv": [9, 5, 8, 10], "texture": "#0"},
 				"east": {"uv": [8, 5, 9, 10], "texture": "#0"},
@@ -124,9 +110,22 @@
 			}
 		},
 		{
-			"name": "smolnethsword_9",
-			"from": [2, 8, 7],
-			"to": [4, 10, 8],
+			"name": "smolclaymore_8",
+			"from": [12, 10, 7.5],
+			"to": [13, 11, 8.5],
+			"faces": {
+				"north": {"uv": [13, 5, 12, 6], "texture": "#0"},
+				"east": {"uv": [12, 5, 13, 6], "texture": "#0"},
+				"south": {"uv": [12, 5, 13, 6], "texture": "#0"},
+				"west": {"uv": [12, 5, 13, 6], "texture": "#0"},
+				"up": {"uv": [12, 5, 13, 6], "texture": "#0"},
+				"down": {"uv": [12, 5, 13, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "smolclaymore_9",
+			"from": [2, 8, 7.5],
+			"to": [4, 10, 8.5],
 			"faces": {
 				"north": {"uv": [4, 6, 2, 8], "texture": "#0"},
 				"east": {"uv": [3, 6, 4, 8], "texture": "#0"},
@@ -137,9 +136,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_10",
-			"from": [7, 3, 7],
-			"to": [8, 10, 8],
+			"name": "smolclaymore_10",
+			"from": [7, 3, 7.5],
+			"to": [8, 10, 8.5],
 			"faces": {
 				"north": {"uv": [8, 6, 7, 13], "texture": "#0"},
 				"east": {"uv": [7, 6, 8, 13], "texture": "#0"},
@@ -150,9 +149,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_11",
-			"from": [4, 3, 7],
-			"to": [5, 9, 8],
+			"name": "smolclaymore_11",
+			"from": [4, 3, 7.5],
+			"to": [5, 9, 8.5],
 			"faces": {
 				"north": {"uv": [5, 7, 4, 13], "texture": "#0"},
 				"east": {"uv": [4, 7, 5, 13], "texture": "#0"},
@@ -163,9 +162,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_12",
-			"from": [6, 3, 7],
-			"to": [7, 9, 8],
+			"name": "smolclaymore_12",
+			"from": [6, 3, 7.5],
+			"to": [7, 9, 8.5],
 			"faces": {
 				"north": {"uv": [7, 7, 6, 13], "texture": "#0"},
 				"east": {"uv": [6, 7, 7, 13], "texture": "#0"},
@@ -176,9 +175,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_13",
-			"from": [3, 6, 7],
-			"to": [4, 8, 8],
+			"name": "smolclaymore_13",
+			"from": [3, 6, 7.5],
+			"to": [4, 8, 8.5],
 			"faces": {
 				"north": {"uv": [4, 8, 3, 10], "texture": "#0"},
 				"east": {"uv": [3, 8, 4, 10], "texture": "#0"},
@@ -189,9 +188,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_14",
-			"from": [5, 4, 7],
-			"to": [6, 8, 8],
+			"name": "smolclaymore_14",
+			"from": [5, 4, 7.5],
+			"to": [6, 8, 8.5],
 			"faces": {
 				"north": {"uv": [6, 8, 5, 12], "texture": "#0"},
 				"east": {"uv": [5, 8, 6, 12], "texture": "#0"},
@@ -202,9 +201,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_15",
-			"from": [9, 4, 7],
-			"to": [11, 6, 8],
+			"name": "smolclaymore_15",
+			"from": [9, 4, 7.5],
+			"to": [11, 6, 8.5],
 			"faces": {
 				"north": {"uv": [11, 10, 9, 12], "texture": "#0"},
 				"east": {"uv": [10, 10, 11, 12], "texture": "#0"},
@@ -215,9 +214,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_16",
-			"from": [3, 2, 7],
-			"to": [4, 5, 8],
+			"name": "smolclaymore_16",
+			"from": [3, 2, 7.5],
+			"to": [4, 5, 8.5],
 			"faces": {
 				"north": {"uv": [4, 11, 3, 14], "texture": "#0"},
 				"east": {"uv": [3, 11, 4, 14], "texture": "#0"},
@@ -228,9 +227,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_17",
-			"from": [8, 2, 7],
-			"to": [9, 5, 8],
+			"name": "smolclaymore_17",
+			"from": [8, 2, 7.5],
+			"to": [9, 5, 8.5],
 			"faces": {
 				"north": {"uv": [9, 11, 8, 14], "texture": "#0"},
 				"east": {"uv": [8, 11, 9, 14], "texture": "#0"},
@@ -241,9 +240,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_18",
-			"from": [2, 0, 7],
-			"to": [3, 4, 8],
+			"name": "smolclaymore_18",
+			"from": [2, 0, 7.5],
+			"to": [3, 4, 8.5],
 			"faces": {
 				"north": {"uv": [3, 12, 2, 16], "texture": "#0"},
 				"east": {"uv": [2, 12, 3, 16], "texture": "#0"},
@@ -254,9 +253,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_19",
-			"from": [9, 2, 7],
-			"to": [10, 4, 8],
+			"name": "smolclaymore_19",
+			"from": [9, 2, 7.5],
+			"to": [10, 4, 8.5],
 			"faces": {
 				"north": {"uv": [10, 12, 9, 14], "texture": "#0"},
 				"east": {"uv": [9, 12, 10, 14], "texture": "#0"},
@@ -267,9 +266,9 @@
 			}
 		},
 		{
-			"name": "smolnethsword_20",
-			"from": [0, 0, 7],
-			"to": [2, 3, 8],
+			"name": "smolclaymore_20",
+			"from": [0, 0, 7.5],
+			"to": [2, 3, 8.5],
 			"faces": {
 				"north": {"uv": [2, 13, 0, 16], "texture": "#0"},
 				"east": {"uv": [1, 13, 2, 16], "texture": "#0"},
@@ -291,7 +290,7 @@
 	},
 	"groups": [
 		{
-			"name": "smolnethsword",
+			"name": "smolclaymore",
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]

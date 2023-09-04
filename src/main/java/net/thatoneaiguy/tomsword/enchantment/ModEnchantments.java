@@ -10,7 +10,7 @@ import net.thatoneaiguy.tomsword.Tomsword;
 public class ModEnchantments {
     public static Enchantment WEAVING = register("weaving",
            new WeavingEnchantment(Enchantment.Rarity.UNCOMMON,
-                    EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+                        EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
 
 
     private static Enchantment register(String name, Enchantment enchantment) {

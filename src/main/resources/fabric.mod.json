@@ -9,10 +9,13 @@
     "thatoneaiguy"
   ],
   "contributors": [
-    "ideologi",
     "yurii",
     "LivingLemming"
   ],
+  "artists": [
+    "ideologi"
+  ],
+
   "contact": {
     "homepage": "https://github.com/NotMarshy1/tomsword",
     "sources": "https://github.com/FabricMC/fabric-example-mod"

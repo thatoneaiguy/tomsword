@@ -31,13 +31,9 @@ public class Shatterblade extends SwordItem {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         user.getItemCooldownManager().set(this, 20);
         ItemStack itemStack = user.getStackInHand(hand);
-        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.NEUTRAL, 0.5F, 0.5F);
+        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.PLAYERS, 0.5F, 0.5F);
 
             if (!world.isClient) {
-                //ShatterbladeEntity snowballEntity = new ShatterbladeEntity(world, user);
-               // snowballEntity.setItem(itemStack);
-              //  snowballEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 0F);
-              //  world.spawnEntity(snowballEntity); // spawns entity
         }
         return TypedActionResult.success(itemStack, world.isClient);
     }
@@ -52,6 +48,8 @@ public class Shatterblade extends SwordItem {
     }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
+
+
 }
 
 

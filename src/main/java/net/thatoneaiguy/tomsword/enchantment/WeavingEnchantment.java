@@ -31,6 +31,7 @@ public class WeavingEnchantment extends Enchantment {
         //super.onTargetDamaged(user, target, level);
     }
 
+
     @Override
     public int getMaxLevel() {
         return 1;

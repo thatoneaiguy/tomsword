@@ -1,16 +1,14 @@
 {
-  "item.tomsword.echo": "§3Echo",
+  "item.tomsword.catalyst": "§8Catalyst",
   "item.tomsword.diamond_longsword": "Diamond Longsword",
   "item.tomsword.netherite_longsword": "Netherite Longsword",
   "item.tomsword.bloodweaver": "§4Bloodweaver",
   "item.tomsword.shatterblade": "§8Shatterblade",
   "item.tomsword.andromeda": "Andromeda",
   "item.tomsword.andromeda_core": "Andromeda Core",
-  "item.tomsword.half_diamond": "Half diamond",
-  "item.tomsword.quarter_diamond": "Quarter diamond",
-  "item.tomsword.diamond_half_of_a_quarter": "Diamond half of a quarter",
-  "item.tomsword.starweaver": "§5Starweaver",
-  "item.tomsword.nethgsword": "Netherite Great Sword",
+  "item.tomsword.starweaver": "Starweaver",
+  "item.tomsword.nethgsword": "Netherite Greatsword",
+  "item.tomsword.cookie_claymore": "Cookie Claymore",
 
   "block.tomsword.chocolate_egg": "Chocolate Egg",
 
