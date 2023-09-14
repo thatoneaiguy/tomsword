@@ -49,7 +49,9 @@ dependencies {
 	implementation 'com.github.Chocohead:Fabric-ASM:v2.3'
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:2.3.0")
 	modImplementation "curse.maven:pick-your-poison-596706:4058476"
-	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19:3.1.40'
+	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19:3.1.0'
+	modImplementation "io.github.ladysnake:satin:1.8.0"
+	include "io.github.ladysnake:satin:1.8.0"
 
 
 	// Fabric API. This is technically optional, but you probably want it anyway.

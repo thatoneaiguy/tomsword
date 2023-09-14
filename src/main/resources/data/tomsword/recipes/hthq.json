@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "tomsword:half_diamond"
-  },
-  "result": "tomsword:diamond_half_of_a_quarter",
-  "count": 4
-}

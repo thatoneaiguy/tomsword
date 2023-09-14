@@ -30,7 +30,7 @@
       "net.thatoneaiguy.tomsword.Tomsword"
     ],
     "client": [
-      "net.thatoneaiguy.tomsword.TomswordClient"
+      "net.thatoneaiguy.tomsword.client.TomswordClient"
     ]
   },
   "mixins": [

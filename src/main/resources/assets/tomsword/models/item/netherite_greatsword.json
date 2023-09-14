@@ -2,25 +2,155 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "tomsword:item/diamond_longsword",
-		"particle": "tomsword:item/diamond_longsword"
+		"0": "tomsword:item/netherite_greatsword",
+		"particle": "tomsword:item/netherite_greatsword"
 	},
 	"elements": [
 		{
-			"name": "diamond_longsword_0",
-			"from": [10.5, 10.5, 7.5],
-			"to": [12, 12, 8.5],
+			"name": "netherite_greatsword_0",
+			"from": [14.5, 14.5, 7.5],
+			"to": [16, 16, 8.5],
 			"faces": {
-				"north": {"uv": [12, 4, 10.5, 5.5], "texture": "#0"},
-				"east": {"uv": [11.5, 4, 12, 5.5], "texture": "#0"},
-				"south": {"uv": [10.5, 4, 12, 5.5], "texture": "#0"},
-				"west": {"uv": [10.5, 4, 11, 5.5], "texture": "#0"},
-				"up": {"uv": [10.5, 4, 12, 4.5], "texture": "#0"},
-				"down": {"uv": [10.5, 5, 12, 5.5], "texture": "#0"}
+				"north": {"uv": [16, 0, 14.5, 1.5], "texture": "#0"},
+				"east": {"uv": [15.5, 0, 16, 1.5], "texture": "#0"},
+				"south": {"uv": [14.5, 0, 16, 1.5], "texture": "#0"},
+				"west": {"uv": [14.5, 0, 15, 1.5], "texture": "#0"},
+				"up": {"uv": [14.5, 0, 16, 0.5], "texture": "#0"},
+				"down": {"uv": [14.5, 1, 16, 1.5], "texture": "#0"}
 			}
 		},
 		{
-			"name": "diamond_longsword_1",
+			"name": "netherite_greatsword_1",
+			"from": [14, 13, 7.5],
+			"to": [14.5, 15.5, 8.5],
+			"faces": {
+				"north": {"uv": [14.5, 0.5, 14, 3], "texture": "#0"},
+				"east": {"uv": [14, 0.5, 14.5, 3], "texture": "#0"},
+				"south": {"uv": [14, 0.5, 14.5, 3], "texture": "#0"},
+				"west": {"uv": [14, 0.5, 14.5, 3], "texture": "#0"},
+				"up": {"uv": [14, 0.5, 14.5, 1], "texture": "#0"},
+				"down": {"uv": [14, 2.5, 14.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_2",
+			"from": [13.5, 12.5, 7.5],
+			"to": [14, 15, 8.5],
+			"faces": {
+				"north": {"uv": [14, 1, 13.5, 3.5], "texture": "#0"},
+				"east": {"uv": [13.5, 1, 14, 3.5], "texture": "#0"},
+				"south": {"uv": [13.5, 1, 14, 3.5], "texture": "#0"},
+				"west": {"uv": [13.5, 1, 14, 3.5], "texture": "#0"},
+				"up": {"uv": [13.5, 1, 14, 1.5], "texture": "#0"},
+				"down": {"uv": [13.5, 3, 14, 3.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_3",
+			"from": [13, 12, 7.5],
+			"to": [13.5, 14.5, 8.5],
+			"faces": {
+				"north": {"uv": [13.5, 1.5, 13, 4], "texture": "#0"},
+				"east": {"uv": [13, 1.5, 13.5, 4], "texture": "#0"},
+				"south": {"uv": [13, 1.5, 13.5, 4], "texture": "#0"},
+				"west": {"uv": [13, 1.5, 13.5, 4], "texture": "#0"},
+				"up": {"uv": [13, 1.5, 13.5, 2], "texture": "#0"},
+				"down": {"uv": [13, 3.5, 13.5, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_4",
+			"from": [14.5, 14, 7.5],
+			"to": [15.5, 14.5, 8.5],
+			"faces": {
+				"north": {"uv": [15.5, 1.5, 14.5, 2], "texture": "#0"},
+				"east": {"uv": [15, 1.5, 15.5, 2], "texture": "#0"},
+				"south": {"uv": [14.5, 1.5, 15.5, 2], "texture": "#0"},
+				"west": {"uv": [14.5, 1.5, 15, 2], "texture": "#0"},
+				"up": {"uv": [14.5, 1.5, 15.5, 2], "texture": "#0"},
+				"down": {"uv": [14.5, 1.5, 15.5, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_5",
+			"from": [12.5, 11.5, 7.5],
+			"to": [13, 14, 8.5],
+			"faces": {
+				"north": {"uv": [13, 2, 12.5, 4.5], "texture": "#0"},
+				"east": {"uv": [12.5, 2, 13, 4.5], "texture": "#0"},
+				"south": {"uv": [12.5, 2, 13, 4.5], "texture": "#0"},
+				"west": {"uv": [12.5, 2, 13, 4.5], "texture": "#0"},
+				"up": {"uv": [12.5, 2, 13, 2.5], "texture": "#0"},
+				"down": {"uv": [12.5, 4, 13, 4.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_6",
+			"from": [14.5, 13.5, 7.5],
+			"to": [15, 14, 8.5],
+			"faces": {
+				"north": {"uv": [15, 2, 14.5, 2.5], "texture": "#0"},
+				"east": {"uv": [14.5, 2, 15, 2.5], "texture": "#0"},
+				"south": {"uv": [14.5, 2, 15, 2.5], "texture": "#0"},
+				"west": {"uv": [14.5, 2, 15, 2.5], "texture": "#0"},
+				"up": {"uv": [14.5, 2, 15, 2.5], "texture": "#0"},
+				"down": {"uv": [14.5, 2, 15, 2.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_7",
+			"from": [12, 11, 7.5],
+			"to": [12.5, 13.5, 8.5],
+			"faces": {
+				"north": {"uv": [12.5, 2.5, 12, 5], "texture": "#0"},
+				"east": {"uv": [12, 2.5, 12.5, 5], "texture": "#0"},
+				"south": {"uv": [12, 2.5, 12.5, 5], "texture": "#0"},
+				"west": {"uv": [12, 2.5, 12.5, 5], "texture": "#0"},
+				"up": {"uv": [12, 2.5, 12.5, 3], "texture": "#0"},
+				"down": {"uv": [12, 4.5, 12.5, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_8",
+			"from": [11.5, 10.5, 7.5],
+			"to": [12, 13, 8.5],
+			"faces": {
+				"north": {"uv": [12, 3, 11.5, 5.5], "texture": "#0"},
+				"east": {"uv": [11.5, 3, 12, 5.5], "texture": "#0"},
+				"south": {"uv": [11.5, 3, 12, 5.5], "texture": "#0"},
+				"west": {"uv": [11.5, 3, 12, 5.5], "texture": "#0"},
+				"up": {"uv": [11.5, 3, 12, 3.5], "texture": "#0"},
+				"down": {"uv": [11.5, 5, 12, 5.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_9",
+			"from": [11, 10, 7.5],
+			"to": [11.5, 12.5, 8.5],
+			"faces": {
+				"north": {"uv": [11.5, 3.5, 11, 6], "texture": "#0"},
+				"east": {"uv": [11, 3.5, 11.5, 6], "texture": "#0"},
+				"south": {"uv": [11, 3.5, 11.5, 6], "texture": "#0"},
+				"west": {"uv": [11, 3.5, 11.5, 6], "texture": "#0"},
+				"up": {"uv": [11, 3.5, 11.5, 4], "texture": "#0"},
+				"down": {"uv": [11, 5.5, 11.5, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_10",
+			"from": [10.5, 9.5, 7.5],
+			"to": [11, 12, 8.5],
+			"faces": {
+				"north": {"uv": [11, 4, 10.5, 6.5], "texture": "#0"},
+				"east": {"uv": [10.5, 4, 11, 6.5], "texture": "#0"},
+				"south": {"uv": [10.5, 4, 11, 6.5], "texture": "#0"},
+				"west": {"uv": [10.5, 4, 11, 6.5], "texture": "#0"},
+				"up": {"uv": [10.5, 4, 11, 4.5], "texture": "#0"},
+				"down": {"uv": [10.5, 6, 11, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_greatsword_11",
 			"from": [10, 9, 7.5],
 			"to": [10.5, 11.5, 8.5],
 			"faces": {
@@ -33,7 +163,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_2",
+			"name": "netherite_greatsword_12",
 			"from": [9.5, 8.5, 7.5],
 			"to": [10, 11, 8.5],
 			"faces": {
@@ -46,7 +176,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_3",
+			"name": "netherite_greatsword_13",
 			"from": [9, 8, 7.5],
 			"to": [9.5, 10.5, 8.5],
 			"faces": {
@@ -59,20 +189,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_4",
-			"from": [10.5, 10, 7.5],
-			"to": [11.5, 10.5, 8.5],
-			"faces": {
-				"north": {"uv": [11.5, 5.5, 10.5, 6], "texture": "#0"},
-				"east": {"uv": [11, 5.5, 11.5, 6], "texture": "#0"},
-				"south": {"uv": [10.5, 5.5, 11.5, 6], "texture": "#0"},
-				"west": {"uv": [10.5, 5.5, 11, 6], "texture": "#0"},
-				"up": {"uv": [10.5, 5.5, 11.5, 6], "texture": "#0"},
-				"down": {"uv": [10.5, 5.5, 11.5, 6], "texture": "#0"}
-			}
-		},
-		{
-			"name": "diamond_longsword_5",
+			"name": "netherite_greatsword_14",
 			"from": [8.5, 7.5, 7.5],
 			"to": [9, 10, 8.5],
 			"faces": {
@@ -85,20 +202,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_6",
-			"from": [10.5, 9.5, 7.5],
-			"to": [11, 10, 8.5],
-			"faces": {
-				"north": {"uv": [11, 6, 10.5, 6.5], "texture": "#0"},
-				"east": {"uv": [10.5, 6, 11, 6.5], "texture": "#0"},
-				"south": {"uv": [10.5, 6, 11, 6.5], "texture": "#0"},
-				"west": {"uv": [10.5, 6, 11, 6.5], "texture": "#0"},
-				"up": {"uv": [10.5, 6, 11, 6.5], "texture": "#0"},
-				"down": {"uv": [10.5, 6, 11, 6.5], "texture": "#0"}
-			}
-		},
-		{
-			"name": "diamond_longsword_7",
+			"name": "netherite_greatsword_15",
 			"from": [8, 7, 7.5],
 			"to": [8.5, 9.5, 8.5],
 			"faces": {
@@ -111,7 +215,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_8",
+			"name": "netherite_greatsword_16",
 			"from": [7.5, 6.5, 7.5],
 			"to": [8, 9, 8.5],
 			"faces": {
@@ -124,7 +228,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_9",
+			"name": "netherite_greatsword_17",
 			"from": [7, 6, 7.5],
 			"to": [7.5, 8.5, 8.5],
 			"faces": {
@@ -137,7 +241,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_10",
+			"name": "netherite_greatsword_18",
 			"from": [6.5, 5.5, 7.5],
 			"to": [7, 8, 8.5],
 			"faces": {
@@ -150,7 +254,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_11",
+			"name": "netherite_greatsword_19",
 			"from": [6, 5, 7.5],
 			"to": [6.5, 7.5, 8.5],
 			"faces": {
@@ -163,7 +267,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_12",
+			"name": "netherite_greatsword_20",
 			"from": [3, 6, 7.5],
 			"to": [4, 7, 8.5],
 			"faces": {
@@ -176,7 +280,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_13",
+			"name": "netherite_greatsword_21",
 			"from": [5.5, 4.5, 7.5],
 			"to": [6, 7, 8.5],
 			"faces": {
@@ -189,7 +293,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_14",
+			"name": "netherite_greatsword_22",
 			"from": [2.5, 4, 7.5],
 			"to": [3, 6.5, 8.5],
 			"faces": {
@@ -202,7 +306,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_15",
+			"name": "netherite_greatsword_23",
 			"from": [5, 4, 7.5],
 			"to": [5.5, 6.5, 8.5],
 			"faces": {
@@ -215,7 +319,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_16",
+			"name": "netherite_greatsword_24",
 			"from": [2, 5, 7.5],
 			"to": [2.5, 6, 8.5],
 			"faces": {
@@ -228,7 +332,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_17",
+			"name": "netherite_greatsword_25",
 			"from": [3, 2.5, 7.5],
 			"to": [3.5, 6, 8.5],
 			"faces": {
@@ -241,7 +345,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_18",
+			"name": "netherite_greatsword_26",
 			"from": [4.5, 2.5, 7.5],
 			"to": [5, 6, 8.5],
 			"faces": {
@@ -254,7 +358,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_19",
+			"name": "netherite_greatsword_27",
 			"from": [4, 2.5, 7.5],
 			"to": [4.5, 5.5, 8.5],
 			"faces": {
@@ -267,7 +371,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_20",
+			"name": "netherite_greatsword_28",
 			"from": [3.5, 3, 7.5],
 			"to": [4, 5, 8.5],
 			"faces": {
@@ -280,7 +384,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_21",
+			"name": "netherite_greatsword_29",
 			"from": [6, 3, 7.5],
 			"to": [7, 4, 8.5],
 			"faces": {
@@ -293,7 +397,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_22",
+			"name": "netherite_greatsword_30",
 			"from": [2.5, 2, 7.5],
 			"to": [3, 3.5, 8.5],
 			"faces": {
@@ -306,7 +410,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_23",
+			"name": "netherite_greatsword_31",
 			"from": [5, 2, 7.5],
 			"to": [6, 3.5, 8.5],
 			"faces": {
@@ -319,7 +423,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_24",
+			"name": "netherite_greatsword_32",
 			"from": [2, 1.5, 7.5],
 			"to": [2.5, 3, 8.5],
 			"faces": {
@@ -332,7 +436,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_25",
+			"name": "netherite_greatsword_33",
 			"from": [6, 2.5, 7.5],
 			"to": [6.5, 3, 8.5],
 			"faces": {
@@ -345,7 +449,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_26",
+			"name": "netherite_greatsword_34",
 			"from": [1.5, 1, 7.5],
 			"to": [2, 2.5, 8.5],
 			"faces": {
@@ -358,7 +462,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_27",
+			"name": "netherite_greatsword_35",
 			"from": [1, 0, 7.5],
 			"to": [1.5, 2, 8.5],
 			"faces": {
@@ -371,7 +475,7 @@
 			}
 		},
 		{
-			"name": "diamond_longsword_28",
+			"name": "netherite_greatsword_36",
 			"from": [0, 0, 7.5],
 			"to": [1, 1.5, 8.5],
 			"faces": {
@@ -387,47 +491,48 @@
 	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, -90, 45],
-			"translation": [0, 12.5, 0],
-			"scale": [1.7, 1.7, 0.85]
+			"rotation": [-50, -90, 0],
+			"translation": [0, 20.25, -1],
+			"scale": [3, 3, 2]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [0, 90, -45],
-			"translation": [0, 12.5, 0],
-			"scale": [1.7, 1.7, 0.85]
+			"translation": [0, 20.5, 1],
+			"scale": [3, 3, 2]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -90, 45],
-			"translation": [1, 6.75, 0.25],
+			"translation": [1, 8, 0.25],
 			"scale": [1.36, 1.36, 0.68]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, 90, -45],
-			"translation": [1, 6.75, 0.25],
+			"translation": [1, 8, 0.25],
 			"scale": [1.36, 1.36, 0.68]
 		},
 		"ground": {
-			"translation": [1.25, 7, 0]
+			"translation": [0, 20, 0],
+			"scale": [3, 3, 2]
 		},
 		"gui": {
-			"translation": [2.5, 2.5, 0],
-			"scale": [1.25, 1.25, 1.25]
+			"scale": [3.25, 3.25, 3.25]
 		},
 		"head": {
 			"rotation": [0, 90, 45],
 			"translation": [0, 21.25, 0],
-			"scale": [2, 2, 2]
+			"scale": [2, 2, 1]
 		},
 		"fixed": {
-			"translation": [2, 2, 0]
+			"translation": [0, -3, -1.5],
+			"scale": [4, 4, 2]
 		}
 	},
 	"groups": [
 		{
-			"name": "diamond_longsword",
+			"name": "netherite_greatsword",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]
 		}
 	]
 }

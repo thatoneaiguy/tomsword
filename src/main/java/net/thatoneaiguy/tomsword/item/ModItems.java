@@ -1,6 +1,5 @@
 package net.thatoneaiguy.tomsword.item;
 
-import dev.emi.trinkets.api.TrinketItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -9,7 +8,8 @@ import net.minecraft.util.registry.Registry;
 import net.thatoneaiguy.tomsword.Tomsword;
 import net.thatoneaiguy.tomsword.item.Andromeda.Andromeda;
 import net.thatoneaiguy.tomsword.item.Bloodweaver.Bloodweaver;
-import net.thatoneaiguy.tomsword.item.Catalyst.Catalyst;
+import net.thatoneaiguy.tomsword.item.Catalyst.BlueCatalyst;
+import net.thatoneaiguy.tomsword.item.Catalyst.RedCatalyst;
 import net.thatoneaiguy.tomsword.item.Claymore.Cookie_claymore;
 import net.thatoneaiguy.tomsword.item.Longswords.Diamond_Longsword;
 import net.thatoneaiguy.tomsword.item.Shatterblade.Shatterblade;
@@ -26,9 +26,10 @@ public class ModItems {
     public static final Item STARWEAVER = registerItem("starweaver",
             new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.EPIC)));
     public static final Item COOKIE_CLAYMORE = registerItem("cookie_claymore", new Cookie_claymore());
-    public static final Item NETHGSWORD = registerItem("nethgsword",
+    public static final Item NETHERITE_GREATSWORD = registerItem("netherite_greatsword",
             new SwordItem(ToolMaterials.NETHERITE, 21, -3.5F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
-    public static final Item CATALYST = registerItem("catalyst", new Catalyst());
+    public static final Item RED_CATALYST = registerItem("red_catalyst", new RedCatalyst());
+    public static final Item BLUE_CATALYST = registerItem("blue_catalyst", new BlueCatalyst());
 
 
 

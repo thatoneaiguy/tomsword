@@ -17,12 +17,13 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(ItemRenderer.class)
 public class ItemRendererMixin {
-    private static final ModelIdentifier DIA_INVENTORY_MODEL = new ModelIdentifier("tomsword:smoldia#inventory");
-    private static final ModelIdentifier NETH_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolneth#inventory");
-    private static final ModelIdentifier BLOOD_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolblood#inventory");
-    private static final ModelIdentifier SHAT_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolshatterblade#inventory");
-    private static final ModelIdentifier CATA_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolcatalyst#inventory");
-    private static final ModelIdentifier COOK_INVENTORY_MODEL = new ModelIdentifier("tomsword:smolclaymore#inventory");
+    private static final ModelIdentifier DIA_INVENTORY_MODEL = new ModelIdentifier("tomsword:diamond_longsword_gui#inventory");
+    private static final ModelIdentifier NETH_INVENTORY_MODEL = new ModelIdentifier("tomsword:netherite_longsword_gui#inventory");
+    private static final ModelIdentifier BLOOD_INVENTORY_MODEL = new ModelIdentifier("tomsword:bloodweaver_gui#inventory");
+    private static final ModelIdentifier SHAT_INVENTORY_MODEL = new ModelIdentifier("tomsword:shatterblade_gui#inventory");
+    private static final ModelIdentifier CATA_INVENTORY_MODEL = new ModelIdentifier("tomsword:blue_catalyst_gui#inventory");
+    private static final ModelIdentifier GUN = new ModelIdentifier("tomsword:red_catalyst_gui");
+    private static final ModelIdentifier COOK_INVENTORY_MODEL = new ModelIdentifier("tomsword:cookie_claymore_gui#inventory");
 
     @Shadow
     private @Final ItemModels models;
@@ -51,13 +52,18 @@ public class ItemRendererMixin {
             }
         }
         if (bl) {
-            if (stack.isOf(ModItems.CATALYST)) {
+            if (stack.isOf(ModItems.BLUE_CATALYST)) {
                 return models.getModelManager().getModel(CATA_INVENTORY_MODEL);
             }
         }
         if (bl) {
             if (stack.isOf(ModItems.COOKIE_CLAYMORE)) {
                 return models.getModelManager().getModel(COOK_INVENTORY_MODEL);
+            }
+        }
+        if (bl) {
+            if (stack.isOf(ModItems.RED_CATALYST)) {
+                return models.getModelManager().getModel(GUN);
             }
         }
 
