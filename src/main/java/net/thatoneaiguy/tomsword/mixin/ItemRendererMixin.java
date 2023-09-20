@@ -22,8 +22,9 @@ public class ItemRendererMixin {
     private static final ModelIdentifier BLOOD_INVENTORY_MODEL = new ModelIdentifier("tomsword:bloodweaver_gui#inventory");
     private static final ModelIdentifier SHAT_INVENTORY_MODEL = new ModelIdentifier("tomsword:shatterblade_gui#inventory");
     private static final ModelIdentifier CATA_INVENTORY_MODEL = new ModelIdentifier("tomsword:blue_catalyst_gui#inventory");
-    private static final ModelIdentifier GUN = new ModelIdentifier("tomsword:red_catalyst_gui");
+    private static final ModelIdentifier RED_CATA_INVENTORY_MODEL = new ModelIdentifier("tomsword:red_catalyst_gui");
     private static final ModelIdentifier COOK_INVENTORY_MODEL = new ModelIdentifier("tomsword:cookie_claymore_gui#inventory");
+    private static final ModelIdentifier EMPTY_CATALYST_INVENTORY_MODEL = new ModelIdentifier("tomsword:empty_catalyst_gui#inventory");
 
     @Shadow
     private @Final ItemModels models;
@@ -63,11 +64,14 @@ public class ItemRendererMixin {
         }
         if (bl) {
             if (stack.isOf(ModItems.RED_CATALYST)) {
-                return models.getModelManager().getModel(GUN);
+                return models.getModelManager().getModel(RED_CATA_INVENTORY_MODEL);
             }
         }
-
-
+        if (bl) {
+            if (stack.isOf(ModItems.EMPTY_CATALYST)) {
+                return models.getModelManager().getModel(EMPTY_CATALYST_INVENTORY_MODEL);
+            }
+        }
         return model;
     }
 }

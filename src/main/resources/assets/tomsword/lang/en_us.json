@@ -1,16 +1,16 @@
 {
-  "item.tomsword.catalyst": "§2Catalyst",
+  "item.tomsword.blue_catalyst": "§1Catalyst",
+  "item.tomsword.red_catalyst": "§4Catalyst",
+  "item.tomsword.empty_catalyst": "Catalyst",
   "item.tomsword.diamond_longsword": "Diamond Longsword",
   "item.tomsword.netherite_longsword": "Netherite Longsword",
   "item.tomsword.bloodweaver": "Bloodweaver",
   "item.tomsword.shatterblade": "§8Shatterblade",
   "item.tomsword.andromeda": "Andromeda",
   "item.tomsword.andromeda_core": "Andromeda Core",
-  "item.tomsword.starweaver": "Starweaver",
-  "item.tomsword.nethgsword": "Netherite Greatsword",
+  "item.tomsword.starweaver": "§5Starweaver",
+  "item.tomsword.netherite_greatsword": "Netherite Greatsword",
   "item.tomsword.cookie_claymore": "§6Cookie Claymore",
 
-  "itemGroup.tomsword.tomsword": "Tomsword",
-
-  "enchantment.tomsword.weaving": "Weaving"
+  "itemGroup.tomsword.tomsword": "Tomsword"
 }

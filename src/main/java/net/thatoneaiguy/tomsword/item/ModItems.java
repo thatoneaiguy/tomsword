@@ -11,13 +11,14 @@ import net.thatoneaiguy.tomsword.item.Bloodweaver.Bloodweaver;
 import net.thatoneaiguy.tomsword.item.Catalyst.BlueCatalyst;
 import net.thatoneaiguy.tomsword.item.Catalyst.RedCatalyst;
 import net.thatoneaiguy.tomsword.item.Claymore.Cookie_claymore;
+import net.thatoneaiguy.tomsword.item.Crystals.SculkCrystal;
 import net.thatoneaiguy.tomsword.item.Longswords.Diamond_Longsword;
 import net.thatoneaiguy.tomsword.item.Shatterblade.Shatterblade;
 
 public class ModItems {
     public static final Item DIAMOND_LONGSWORD = registerItem("diamond_longsword", new Diamond_Longsword());
     public static final Item NETHERITE_LONGSWORD = registerItem("netherite_longsword",
-            new SwordItem(ToolMaterials.DIAMOND, 5, -2.8F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
+            new SwordItem(ToolMaterials.DIAMOND, 5, -2.8F, new FabricItemSettings().group(ModItemGroup.TOMSWORD).fireproof()));
     public static final Item BLOODWEAVER = registerItem("bloodweaver", new Bloodweaver());
     public static final Item SHATTERBLADE = registerItem("shatterblade", new Shatterblade());
     public static final Item ANDROMEDA_CORE = registerItem("andromeda_core",
@@ -30,7 +31,10 @@ public class ModItems {
             new SwordItem(ToolMaterials.NETHERITE, 21, -3.5F, new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
     public static final Item RED_CATALYST = registerItem("red_catalyst", new RedCatalyst());
     public static final Item BLUE_CATALYST = registerItem("blue_catalyst", new BlueCatalyst());
-
+    public static final Item SCULK_CRYSTAL = registerItem("sculk_crystal",
+            new SculkCrystal(new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE)));
+    public static final Item EMPTY_CATALYST = registerItem("empty_catalyst",
+            new Item(new FabricItemSettings().group(ModItemGroup.TOMSWORD)));
 
 
     public static final Item registerItem(String name, Item item) {

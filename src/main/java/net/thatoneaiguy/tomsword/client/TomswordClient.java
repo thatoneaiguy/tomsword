@@ -2,13 +2,19 @@ package net.thatoneaiguy.tomsword.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
+import net.minecraft.client.particle.BubbleColumnUpParticle;
+import net.minecraft.client.particle.FlameParticle;
+import net.minecraft.client.particle.WaterBubbleParticle;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.entity.ProjectileEntityRenderer;
 import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
+import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.util.Identifier;
 import net.thatoneaiguy.tomsword.Tomsword;
 import net.thatoneaiguy.tomsword.client.render.CatalystEntityRenderer;
@@ -25,6 +31,9 @@ public class TomswordClient implements ClientModInitializer {
         ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "shatterblade_gui", "inventory")));
         ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "blue_catalyst_gui", "inventory")));
         ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "cookie_claymore_gui", "inventory")));
+        ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "empty_catalyst_gui", "inventory")));
+        ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "empty_catalyst_gui", "inventory")));
+        ModelLoadingRegistry.INSTANCE.registerModelProvider((resources, out) -> out.accept(new ModelIdentifier("tomsword", "red_catalyst_gui", "inventory")));
 
         EntityRendererRegistry.register(Tomsword.CatalystEntityType, CatalystEntityRenderer::new);
 

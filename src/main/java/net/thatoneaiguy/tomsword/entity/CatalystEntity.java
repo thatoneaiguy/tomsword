@@ -51,6 +51,7 @@ public class CatalystEntity extends PersistentProjectileEntity {
         return Items.SCULK;
     }
 
+
     @Override
     public void tick() {
         super.tick();
@@ -62,7 +63,6 @@ public class CatalystEntity extends PersistentProjectileEntity {
                     this.world.addParticle(new ItemStackParticleEffect(ParticleTypes.ITEM, new ItemStack(getBreakItemParticle(), 10)), this.getX() - 1 +random.nextGaussian() / 20f, this.getY() + random.nextGaussian() / 20f, this.getZ() + random.nextGaussian() / 20f, random.nextGaussian() / 20f, 0.2D + random.nextGaussian() / 20f, random.nextGaussian() / 20f);
                     this.world.addParticle(new ItemStackParticleEffect(ParticleTypes.ITEM, new ItemStack(getBreakItemParticle(), 10)), this.getX() - 2 + random.nextGaussian() / 20f, this.getY() + random.nextGaussian() / 20f, this.getZ() + random.nextGaussian() / 20f, random.nextGaussian() / 20f, 0.2D + random.nextGaussian() / 20f, random.nextGaussian() / 20f);
                     this.kill();
-
                 }
             }
     }

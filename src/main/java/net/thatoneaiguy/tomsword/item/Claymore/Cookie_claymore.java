@@ -24,7 +24,7 @@ public class Cookie_claymore extends SwordItem {
 
     public Cookie_claymore() {
         super(ToolMaterials.NETHERITE, 3, -2.4F,
-                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE));
+                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE).fireproof());
     }
 
     @Override

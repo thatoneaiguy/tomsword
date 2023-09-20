@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "tomsword:item/blue_crystal",
-		"particle": "tomsword:item/blue_crystal"
+		"0": "tomsword:item/sculk_crystal",
+		"particle": "tomsword:item/sculk_crystal"
 	},
 	"elements": [
 		{

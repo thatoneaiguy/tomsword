@@ -23,12 +23,12 @@ public class BlueCatalyst extends SwordItem {
 
     public BlueCatalyst() {
         super(ToolMaterials.NETHERITE, 3, -2.4F,
-                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE));
+                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE).fireproof());
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        //user.getItemCooldownManager().set(this, 20);
+        user.getItemCooldownManager().set(this, 20);
         ItemStack itemStack = user.getStackInHand(hand);
         world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_RESPAWN_ANCHOR_DEPLETE, SoundCategory.PLAYERS, 0.5F, 1.5F);
         Vec3d vec3d = user.getRotationVec(1.0F);

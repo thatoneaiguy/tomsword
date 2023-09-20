@@ -21,11 +21,11 @@ public class RedCatalyst extends SwordItem {
 
     public RedCatalyst() {
         super(ToolMaterials.NETHERITE, 3, -2.4F,
-                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE));
+                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE).fireproof());
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        //user.getItemCooldownManager().set(this, 90);
+        user.getItemCooldownManager().set(this, 90);
         Vec3d vec3d = user.getRotationVec(1.0F);
         double f = user.getX() + vec3d.x * 4.0; // Adjusted this line
         double g = user.getEyeY() + vec3d.y * 4.0; // Adjusted this line

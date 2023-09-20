@@ -27,7 +27,7 @@ public class Bloodweaver extends SwordItem {
 
     public Bloodweaver() {
         super(ToolMaterials.NETHERITE, 3, -2.4F,
-                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE));
+                new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE).fireproof());
     }
 
    @Override
