@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "tomsword:empty_catalyst"
+  },
+  "addition": {
+    "item": "tomsword:sculk_crystal"
+  },
+  "result": {
+    "item": "tomsword:blue_catalyst"
+  }
+}

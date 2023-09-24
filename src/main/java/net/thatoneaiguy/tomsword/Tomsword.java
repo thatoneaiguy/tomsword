@@ -52,8 +52,6 @@ public class Tomsword implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 
-		ModEnchantments.registerModEnchantments();
-
 		C2SUseAndromeda.register();
 
 		Registry.register(Registry.SOUND_EVENT, Tomsword.BLOODWEAVER_EFFECT, BLOODWEAVER_SOUNDS);
@@ -71,7 +69,7 @@ public class Tomsword implements ModInitializer {
 
 			LootPool lootPool2 = LootPool.builder()
 					.bonusRolls(lootTableRange)
-					.conditionally(RandomChanceLootCondition.builder(0.75f).build())
+					.conditionally(RandomChanceLootCondition.builder(0.85f).build())
 					.with(ItemEntry.builder((Items.ENCHANTED_GOLDEN_APPLE)).build()).build();
 			supplier.pool(lootPool2);
 		}});

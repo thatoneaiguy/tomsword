@@ -1,6 +1,7 @@
 package net.thatoneaiguy.tomsword.item.Catalyst;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FireballEntity;
 import net.minecraft.item.ItemStack;
@@ -22,6 +23,11 @@ public class RedCatalyst extends SwordItem {
     public RedCatalyst() {
         super(ToolMaterials.NETHERITE, 3, -2.4F,
                 new FabricItemSettings().group(ModItemGroup.TOMSWORD).rarity(Rarity.RARE).fireproof());
+    }
+
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        return super.postHit(stack, target, attacker);
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
